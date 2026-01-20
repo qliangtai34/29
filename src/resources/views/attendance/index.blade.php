@@ -5,6 +5,12 @@
 
     <h2>勤怠打刻</h2>
 
+    {{-- 👤 ユーザー名表示 --}}
+<p>
+    ログインユーザー：
+    <strong>{{ auth()->user()->name }}</strong>
+</p>
+
     <p>現在時刻：{{ now()->format('Y-m-d H:i:s') }}</p>
 
     <h3>今日のステータス：{{ $attendance->status }}</h3>
